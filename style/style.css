@@ -1,2 +1,23 @@
-use strict
- 
+body{
+    background-color: bisque;
+    color: lightcoral;
+    text-align: center;
+}
+
+h1{
+    font-size: 3em;
+    font-family: serif, cursive;
+    font-weight: bold;
+    padding: 20px;
+}
+
+main{
+    font-size: 1.5em;
+    font-family: cursive, serif;
+    padding: 10px;
+    margin: 30px;
+}
+
+p{
+    margin: 60px;
+}
