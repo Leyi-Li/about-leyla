@@ -1,6 +1,6 @@
 'use strict';
 
-alert("Hi There")
+alert("Hi There");
 
 //The answers to my give questions
 var travel = prompt("Do you like to travel?").toUpperCase();
@@ -13,7 +13,7 @@ if (travel === "Y" || travel === "YES"){
     answer1 = true;
     console.log(answer1);
     alert("That's great that you love traveling too!!");
-}else (travel === "N" || travel === "NO") {
+}else {
     answer1 = false;
     console.log(answer1);
     alert("That's sad that you don't like traveling ");
@@ -27,7 +27,7 @@ if (food === "Y" || food === "YES"){
     answer2 = true;
     console.log(answer2);
     alert("That's great that you love sushi too!!");
-}else(food === "N" || food === "NO") {
+}else {
     answer2 = false;
     console.log(answer2);
     alert("That's sad that you don't like sushi ");
@@ -41,7 +41,7 @@ if (pet === "Y" || pet === "YES"){
     answer3 = true;
     console.log(answer3);
     alert("That's great that you like doggy ");
-}else (pet === "N" || pet === "NO") {
+}else  {
     answer3 = false;
     console.log(answer1);
     alert("That's sad that you don't like dogs, who are you? ");
@@ -55,7 +55,7 @@ if (drink === "Y" || drink === "YES"){
     answer4 = true;
     console.log(answer4);
     alert("That's great that you like wine ");
-}else (drink === "N" || drink === "NO") {
+}else  {
     answer4 = false;
     console.log(answer4);
     alert("That's sad that you don't like wine ");
@@ -70,7 +70,7 @@ if (activity === "Y" || activity === "YES"){
     answer1 = true;
     console.log(answer5);
     alert("That's sad that you don't like camping ");
-}else (activity === "N" || activity === "NO") {
+}else {
     answer5 = false;
     console.log(answer5);
     alert("That's sad that you don't like camping ");
@@ -80,8 +80,14 @@ if (activity === "Y" || activity === "YES"){
 if (answer1 && answer2 && answer3 && answer4 
     && answer5) { 
     console.log("We will be best friends");
+    alert("We will be best friends")
 }else if(answer1 || answer2 || answer3 || answer4 || answer5) {
     console.log("Maybe we can be friends");
+    alert("Maybe we can be friends");
 }else {
     console.log("I guess we can still try to be friends");
+    alert("I guess we can still try to be friends");
 }
+
+
+//(drink === "N" || drink === "NO")
