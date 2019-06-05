@@ -23,13 +23,14 @@ p{
 }
 
 .job{
-    
+    color: blue;
 }
 
 .education{
-    
+    color: blue; 
 }
 
 ol{
     list-style: lower-roman;
+    list-style-position: inside;
 }

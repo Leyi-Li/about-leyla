@@ -92,4 +92,31 @@ if (answer1 && answer2 && answer3 && answer4
 }
 
 
-//(drink === "N" || drink === "NO")
+//Birthday guess
+
+var bDay = prompt('My birthday is in June, but guess which day is it? (Please answer with Arabic numerals like 1,2,3...)');
+//normalize answers
+if (isNaN(bDay) === true) {
+    alert('Please answer with Arabic numerals like 1, 2, 3...');
+    bDay = prompt('My birthday is in June, but guess which day is it? (Please answer with Arabic numerals like 1,2,3...)');
+}
+//guess game here
+for (var i = 4; i > 0; i--) {
+    
+    if (bDay === '5') {
+        alert('You are right! My birthday is on June 5th');
+        break;
+    }else if(bDay < 5){
+        alert('It should be a bigger number');
+        bDay = prompt('My birthday is in June, but guess which day is it? (Please answer with Arabic numerals like 1,2,3...)');
+    }else{
+        alert('it should be a smaller number');
+        bDay = prompt('My birthday is in June, but guess which day is it? (Please answer with Arabic numerals like 1,2,3...)');
+    }
+
+    if (i === 1 && bDay !== 5) {
+        alert('Oh no, you used all 4 chances! My birthday is on June 5th!');
+    }
+}
+
+
