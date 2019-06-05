@@ -1,6 +1,8 @@
 'use strict';
 
 alert("Hi There");
+var name = prompt('What is your name?');
+alert('So nice to meet you ' + name + '!');
 
 //The answers to my give questions
 var travel = prompt("Do you like to travel?").toUpperCase();
