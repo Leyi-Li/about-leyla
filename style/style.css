@@ -23,9 +23,13 @@ p{
 }
 
 .job{
-    text-align: left;
+    
 }
 
 .education{
-    text-align: left;
+    
+}
+
+ol{
+    list-style: lower-roman;
 }
