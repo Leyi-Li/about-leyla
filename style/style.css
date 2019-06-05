@@ -21,3 +21,11 @@ main{
 p{
     margin: 60px;
 }
+
+.job{
+    text-align: left;
+}
+
+.education{
+    text-align: left;
+}
