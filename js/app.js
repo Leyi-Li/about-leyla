@@ -4,17 +4,19 @@ alert("Hi There")
 
 //The answers to my give questions
 var travel = prompt("Do you like to travel?").toUpperCase();
+if (travel !== "Y" && travel !== "YES" && travel !== "N" && travel !== "NO"){
+    alert("Please answer with Y/N or Yes/No");
+}
 console.log(travel);
 var answer1= true;
 if (travel === "Y" || travel === "YES"){
     answer1 = true;
     console.log(answer1);
-}else if(travel === "N" || travel === "NO") {
+    alert("That's great that you love traveling too!!");
+}else (travel === "N" || travel === "NO") {
     answer1 = false;
     console.log(answer1);
-}else {
-    console.log("Error");
-    alert("Please answer with Y/N or Yes/No");
+    alert("That's sad that you don't like traveling ");
 }
 
 //answer2
@@ -23,11 +25,12 @@ console.log(food);
 var answer2= true;
 if (food === "Y" || food === "YES"){
     answer2 = true;
-}else if(food === "N" || food === "NO") {
+    console.log(answer2);
+    alert("That's great that you love sushi too!!");
+}else(food === "N" || food === "NO") {
     answer2 = false;
-}else {
-    console.log("Error");
-    alert("Please answer with Y/N or Yes/No");
+    console.log(answer2);
+    alert("That's sad that you don't like sushi ");
 }
 
 //answer3
@@ -36,11 +39,12 @@ console.log(pet);
 var answer3= true;
 if (pet === "Y" || pet === "YES"){
     answer3 = true;
-}else if(pet === "N" || pet === "NO") {
+    console.log(answer3);
+    alert("That's great that you like doggy ");
+}else (pet === "N" || pet === "NO") {
     answer3 = false;
-}else {
-    console.log("Error");
-    alert("Please answer with Y/N or Yes/No");
+    console.log(answer1);
+    alert("That's sad that you don't like dogs, who are you? ");
 }
 
 //answer4
@@ -49,11 +53,12 @@ var drink = prompt("Do you like to drink wine?").toUpperCase();
 console.log(drink);
 if (drink === "Y" || drink === "YES"){
     answer4 = true;
-}else if(drink === "N" || drink === "NO") {
+    console.log(answer4);
+    alert("That's great that you like wine ");
+}else (drink === "N" || drink === "NO") {
     answer4 = false;
-}else {
-    console.log("Error");
-    alert("Please answer with Y/N or Yes/No");
+    console.log(answer4);
+    alert("That's sad that you don't like wine ");
 }
 
 //answer5
@@ -63,11 +68,12 @@ console.log(activity);
 
 if (activity === "Y" || activity === "YES"){
     answer1 = true;
-}else if(activity === "N" || activity === "NO") {
+    console.log(answer5);
+    alert("That's sad that you don't like camping ");
+}else (activity === "N" || activity === "NO") {
     answer5 = false;
-}else {
-    console.log("Error");
-    alert("Please answer with Y/N or Yes/No");
+    console.log(answer5);
+    alert("That's sad that you don't like camping ");
 }
 
 //see if Leyla's friend
