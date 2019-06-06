@@ -119,4 +119,27 @@ for (var i = 4; i > 0; i--) {
     }
 }
 
-
+//multiple correct anwers question
+var countries = ['iceland', 'japan','thailand', 'france', 'china', 'the us', 'the uk', 'ireland', 'switzerland'];
+var answer7 = prompt('Which country do you think I have been to? (You will have 6 guesses)').toLowerCase();
+// answer7 = answer7.toUpperCase();
+var guess = 0;
+var answerCorrect = false;
+console.log(answer7);
+while(guess < 6) {
+  guess++;
+    for (var x = 0; x < countries.length; x++){
+        if(answer7 === countries[x]){
+            
+            answerCorrect = true;
+            
+        }
+    }
+        if (answerCorrect === true){
+            alert('You are right, I have been to ' + countries[x]);
+            break;
+        }else{
+            answer7 = prompt('Wrong! You will have ' + (6-guess) + ' more chances.').toLowerCase();
+            console.log('else');
+        }    
+}
