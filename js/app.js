@@ -133,10 +133,11 @@ while(guess < 6) {
             
             answerCorrect = true;
             
+            
         }
     }
         if (answerCorrect === true){
-            alert('You are right, I have been to ' + countries[x]);
+            alert('You are right, I have been to ' + answer7);
             break;
         }else{
             answer7 = prompt('Wrong! You will have ' + (6-guess) + ' more chances.').toLowerCase();
