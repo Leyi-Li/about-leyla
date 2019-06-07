@@ -5,7 +5,7 @@ var name = prompt('What is your name?');
 alert('So nice to meet you ' + name + '!');
 
 //The answers to my give questions
-//done
+
 
 var answer1;
 var answer2;
