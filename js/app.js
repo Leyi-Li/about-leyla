@@ -1,8 +1,8 @@
 'use strict';
 
 alert('Hi There');
-var name = prompt('What is your name?');
-alert('So nice to meet you ' + name + '!');
+var personName = prompt('What is your name?');
+alert('So nice to meet you ' + personName + '!');
 
 //The answers to my give questions
 
