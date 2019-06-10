@@ -9,11 +9,61 @@ body{
     text-align: center;
 }
 
+
+nav{
+    color:white;
+    background-color: rgb(229, 158, 209, 60%);
+    font-family:'Courier New', Courier, monospace;
+    font-size:25px;
+    font-weight: 3px;
+    height:40px;
+    display: block;
+    position:fixed;
+    top:0px;
+    width:80%;
+    text-align: center;
+    margin:10px;
+    left:150px;
+    z-index: 10;
+}
+
+nav>ul{
+    margin-top: 10px;
+}
+
+nav>ul>li{
+    display:inline;
+    padding:15px;
+    
+}
+
+nav>ul>li>a:link{
+    color:rgb(241, 234, 235);
+}
+
+nav>ul>li>a:visited{
+    color:rgb(201, 150, 133);
+}
+
+nav>ul>li>a:hover{
+    text-decoration: underline;
+    color:rgb(216, 166, 146);
+}
+
+nav>ul>li>a:active{
+    color:palevioletred;
+}
+
+header{
+    margin-top:80px;
+}
+
 h1{
     font-size: 3em;
     font-family: serif, cursive;
     font-weight: bold;
     padding: 20px;
+    
 }
 
 main{
@@ -21,10 +71,13 @@ main{
     font-family: cursive, serif;
     padding: 10px;
     margin: 30px;
+    
 }
 
 .leyla-pic{
     transform: rotate(90deg);
+    border-style:ridge;
+    border-color: aliceblue;
 }
 
 p{
@@ -32,17 +85,34 @@ p{
 }
 
 .job{
-    color: blue;
+    color:rgb(196, 112, 126);
 }
 
 .education{
-    color: blue; 
+    color:rgb(196, 112, 126); 
 }
 
-p.to-gallery{
+div.to-gallery{
     color:rgb(201, 148, 157);
     font-style: italic;
     cursor: pointer;
+}
+
+div.to-gallery>p>a:link{
+    color:rgb(201, 148, 157);
+}
+
+div.to-gallery>p>a:visited{
+    color:darksalmon;
+}
+
+div.to-gallery>p>a:hover{
+    font-size: 1.5em;
+    color:lightsalmon;
+}
+
+div.to-gallery>p>a:active{
+    color:palevioletred;
 }
 
 ol{
