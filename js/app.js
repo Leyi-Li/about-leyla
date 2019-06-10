@@ -12,6 +12,7 @@ var answer2;
 var answer3;
 var answer4;
 var answer5;
+var correctAnswers = 0;
 
 
 q1Ask();
@@ -42,6 +43,7 @@ function q1Ask() {
   answer1 = true;
   if (travel === 'Y' || travel === 'YES') {
     answer1 = true;
+    correctAnswers++;
     console.log(answer1);
     alert('That\'s great that you love traveling too!!');
   } else {
@@ -59,6 +61,7 @@ function q2Ask() {
   answer2 = true;
   if (food === 'Y' || food === 'YES') {
     answer2 = true;
+    correctAnswers++;
     console.log(answer2);
     alert('That\'s great that you love sushi too!!');
   } else {
@@ -75,6 +78,7 @@ function q3Ask() {
   answer3 = true;
   if (pet === 'Y' || pet === 'YES') {
     answer3 = true;
+    correctAnswers++;
     console.log(answer3);
     alert('That\'s great that you like doggy ');
   } else {
@@ -91,8 +95,9 @@ function q4Ask() {
   console.log(drink);
   if (drink === 'Y' || drink === 'YES') {
     answer4 = true;
+    correctAnswers++;
     console.log(answer4);
-    alert('That\'s great that you like wine ');
+    alert('Wine is the best when you have a long day, isn\'t it?' );
   } else {
     answer4 = false;
     console.log(answer4);
@@ -108,8 +113,9 @@ function q5Ask() {
 
   if (activity === 'Y' || activity === 'YES') {
     answer5 = true;
+    correctAnswers++;
     console.log(answer5);
-    alert('That\'s sad that you don\'t like camping ');
+    alert('Camping is so great right?!');
   } else {
     answer5 = false;
     console.log(answer5);
@@ -117,8 +123,11 @@ function q5Ask() {
   }
 }
 
+
+
 //see if Leyla's friend
 function q6Ask() {
+  alert('You like ' + correctAnswers + ' out of the 5 things that I like!');
   if (answer1 && answer2 && answer3 && answer4
         && answer5) {
     console.log('We will be best friends');
@@ -186,4 +195,5 @@ function q8Ask() {
       console.log('else');
     }
   }
+  alert('You used ' + guess +' guesses out of 6, and these are the countries that I had been to: Iceland, Japan, Thailand, France, China, The US, The UK, Ireland, Switzerland');
 }
