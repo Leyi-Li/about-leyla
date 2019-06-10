@@ -23,6 +23,10 @@ main{
     margin: 30px;
 }
 
+.leyla-pic{
+    transform: rotate(90deg);
+}
+
 p{
     margin: 60px;
 }
@@ -35,7 +39,14 @@ p{
     color: blue; 
 }
 
+p.to-gallery{
+    color:rgb(201, 148, 157);
+    font-style: italic;
+    cursor: pointer;
+}
+
 ol{
     list-style: lower-roman;
     list-style-position: inside;
 }
+
